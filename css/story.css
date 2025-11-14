@@ -1,0 +1,94 @@
+.main {
+    /* background-color: rgb(111, 117, 97); */
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    padding: 0 50px;
+    color: antiquewhite;
+}
+
+.back-btn {
+    background-color: rgb(111, 117, 97);
+    font-family: "tangerine", cursive;
+    font-size: 2rem;
+    text-decoration: none;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-arrow {
+    background-color: rgb(111, 117, 97);
+    height: 50px;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+.title {
+    margin: 2rem;
+}
+
+.section-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-right {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.story {
+    font-family: "league script", cursive;
+    font-size:4rem;
+    text-wrap: none;
+    background-color: rgb(111, 117, 97);
+}
+
+.small-photo {
+    width: 500px;
+}
+
+.photo-date {
+    position: relative;
+    font-size: 3rem;
+    background-color:  rgb(111, 117, 97);
+    padding: 0.5rem;
+    width: fit-content;
+}
+
+.top-left {
+    position: relative;
+    top: 50px;
+    right: 50px;
+    z-index: 1;
+    text-align: left;
+}
+
+.bottom-right {
+    position: relative;
+    top: -50px;
+    left: 50px;
+    text-align: right;
+    justify-self: end;
+}
+
+.bottom-left {
+    position: relative;
+    top: 50px;
+    right: 50px;
+    text-align: left;
+}
+
+.top-right {
+    position: relative;
+    top: -50px;
+    left: 50px;
+    z-index: 1;
+    text-align: right;
+    justify-self: end;
+}

@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fleur De Leah', cursive;
+    font-weight: 200;
+    color: rgb(250, 235, 215);
+    background-color: none;
+}
+
+body {
+    background-color:rgb(111, 117, 97);
+    background-image: url("../assets/flower_2_purple.png");
+    background-repeat: repeat;
+    background-size: 120vw;
+    background-position: 50% 50%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex {
+    flex: 1;
+}
+
+.title {
+    font-size:7rem;
+    text-align: center;
+    background-color: rgb(111, 117, 97);
+    justify-self: center;
+    padding: 0.5rem;
+}
+
+.subtitle {
+    font-family: "tangerine", cursive;
+    font-size:4rem;
+    text-wrap: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.large-photo {
+    margin: 8rem;
+    width: 100%;
+    min-width: 300px;
+    border-radius: 400px;
+    border: 0.5rem solid #2B061B;
+}
+
+#solid-back {
+    background-color:rgb(111, 117, 97);
+    padding: 4rem;
+    border-radius: 100px;
+    border: 0.5rem solid #2B061B;
+}
+
+/* Utility */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 5rem;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+    }
+
+    .right {
+        justify-content: center;
+    }
+
+    .left {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        background-size: 140vw;
+    }
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto 0;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .subtitle {
+        font-size: 2rem
+    }
+
+    #solid-back {
+        margin: 2rem;
+    }
+
+    #text {
+        margin-top: auto;
+        padding-top: 2rem;
+    }
+
+    #photo {
+        margin-bottom: auto;
+    }
+
+    .large-photo {
+        margin-top: 2rem;
+       
+    }
+
+    .left {
+        margin: 0;
+    }
+
+    .large-photo {
+        width: 80vw;
+        margin: 0;
+        /* padding-top: 2rem; */
+        border: 0.5rem solid #2B061B;
+    }
+}
